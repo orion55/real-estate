@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Real-Estate">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="img/favicon.png">
+		<title>Real-Estate</title>
+		<link rel="stylesheet" href="css/styles.min.css">
+	</head>
+	<body>
+		<header class="header">
+			<nav class="menu"><a href="#" class="menu-logo">Reales</a>
+				<ul class="menu-list">
+					<li class="menu-item"><a href="#" class="menu-link">Sign Up</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">Sign In</a></li>
+					<li class="menu-item"><a href="#" class="menu-link menu-link-active">List a Property</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="box">
+			<div class="slider">
+				<ul class="slider-list bxslider">
+					<li class="slider-item"><img src="#" alt="background01" class="slider-item-image"></li>
+					<li class="slider-item"><img src="#" alt="background02" class="slider-item-image"></li>
+					<li class="slider-item"><img src="#" alt="background03" class="slider-item-image"></li>
+				</ul>
+			</div>
+			<section class="home">
+				<h1 class="home-title">Now it's easy to find your future home</h1>
+				<div class="home-subtitle">With reales - real estate html template</div><a href="#" class="btn btn-black">Learn More</a>
+			</section>
+			<div class="group-search">
+				<form id="form-search" method="post" action="#" class="form-search">
+					<input name="search-city" placeholder="City" class="form-search-input">
+					<select name="select-bedrooms" class="form-search-select">
+						<option selected="selected">Bedrooms</option>
+						<option>1</option>
+						<option>2</option>
+					</select>
+					<select name="select-bathrooms" class="form-search-select">
+						<option selected="selected">Bathrooms</option>
+						<option>1</option>
+						<option>2</option>
+					</select>
+					<div class="input-group">
+						<div class="input-group-dollar">$</div>
+						<input type="text" placeholder="From" name="search-min-price" class="form-search-input">
+					</div>
+					<div class="input-group">
+						<div class="input-group-dollar">$</div>
+						<input type="text" placeholder="To" name="search-max-price" class="form-search-input">
+					</div>
+					<label class="form-search-label">
+						<input type="checkbox" name="for-rent" class="form-search-check">For Rent
+					</label>
+					<label class="form-search-label">
+						<input type="checkbox" name="for-sale" class="form-search-check">For Sale
+					</label>
+					<button type="submit" class="btn btn-green btn-search">Search</button>
+				</form>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer__text">&copy;</div>
+		</footer>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.min.js"></script>
+</html>

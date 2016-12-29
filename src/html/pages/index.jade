@@ -1,0 +1,43 @@
+extends ../main.layout
+
+block title
+    | Real-Estate
+
+block content
+    .box
+        .slider
+            ul.slider-list.bxslider
+                li.slider-item
+                    img.slider-item-image(src="#" alt="background01")
+                li.slider-item
+                    img.slider-item-image(src="#" alt="background02")
+                li.slider-item
+                    img.slider-item-image(src="#" alt="background03")
+        section.home
+            h1.home-title Now it's easy to find your future home
+            .home-subtitle With reales - real estate html template
+            a.btn.btn-black(href="#") Learn More
+        .group-search
+            form.form-search#form-search(method="post" action="#")
+                input.form-search-input(name="search-city" placeholder="City")
+                select.form-search-select(name="select-bedrooms")
+                    option(selected="selected") Bedrooms
+                    option 1
+                    option 2
+                select.form-search-select(name="select-bathrooms")
+                    option(selected="selected") Bathrooms
+                    option 1
+                    option 2
+                .input-group
+                    .input-group-dollar $
+                    input.form-search-input(type="text" placeholder="From" name="search-min-price")
+                .input-group
+                    .input-group-dollar $
+                    input.form-search-input(type="text" placeholder="To" name="search-max-price")
+                label.form-search-label
+                    input.form-search-check(type="checkbox" name="for-rent")
+                    | For Rent
+                label.form-search-label
+                    input.form-search-check(type="checkbox" name="for-sale")
+                    | For Sale
+                button.btn.btn-green.btn-search(type="submit") Search
