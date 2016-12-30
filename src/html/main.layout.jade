@@ -25,7 +25,24 @@ html(lang='ru')
         block content
 
         footer.footer
-            .footer__text &copy;
+            .company
+                h3.company-title Company
+                ul.company-list
+                    li.company-item
+                        a.company-link(href="#") About
+                    li.company-item
+                        a.company-link(href="#") Jobs
+                    li.company-item
+                        a.company-link(href="#") Press
+                    li.company-item
+                        a.company-link(href="#") Blog
+                    li.company-item
+                        a.company-link(href="#") Help
+                    li.company-item
+                        a.company-link(href="#") Poliies
+                    li.company-item
+                        a.company-link(href="#") Terms & Privacy
+
 
     //build:js js/jquery.min.js
     +vendor('script', 'jquery/dist/jquery.min.js')
