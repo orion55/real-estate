@@ -25,24 +25,64 @@ html(lang='ru')
         block content
 
         footer.footer
-            .company
-                h3.company-title Company
-                ul.company-list
-                    li.company-item
-                        a.company-link(href="#") About
-                    li.company-item
-                        a.company-link(href="#") Jobs
-                    li.company-item
-                        a.company-link(href="#") Press
-                    li.company-item
-                        a.company-link(href="#") Blog
-                    li.company-item
-                        a.company-link(href="#") Help
-                    li.company-item
-                        a.company-link(href="#") Poliies
-                    li.company-item
-                        a.company-link(href="#") Terms & Privacy
-
+            .footer-row
+                .company
+                    h3.company-title Company
+                    ul.company-list
+                        li.company-item
+                            a.company-link(href="#") About
+                        li.company-item
+                            a.company-link(href="#") Jobs
+                        li.company-item
+                            a.company-link(href="#") Press
+                        li.company-item
+                            a.company-link(href="#") Blog
+                        li.company-item
+                            a.company-link(href="#") Help
+                        li.company-item
+                            a.company-link(href="#") Poliies
+                        li.company-item
+                            a.company-link(href="#") Terms & Privacy
+                .disover
+                    h3.disover-title Disover
+                    ul.company-list
+                        li.company-item
+                            a.company-link(href="#") Become a Memeber
+                        li.company-item
+                            a.company-link(href="#") Properties List
+                        li.company-item
+                            a.company-link(href="#") Sign In
+                        li.company-item
+                            a.company-link(href="#") Widgets
+                        li.company-item
+                            a.company-link(href="#") Components
+                        li.company-item
+                            a.company-link(href="#") Tables
+                        li.company-item
+                            a.company-link(href="#") Lists
+                .contact
+                    h3.contact-title Get in Touch
+                    .contact-phone
+                        i.phone-icon
+                        | 800 234 67 89
+                    address.contact-address 516 Green St<br>San Francisco, CA 94133<br>United States
+                    ul.contact-social.social-list-white
+                        li.social-item-white.social-mail
+                            a.social-mail-link(href="#")
+                        li.social-item-white.social-face
+                            a.social-face-link(href="#")
+                        li.social-item-white.social-twi
+                            a.social-twi-link(href="#")
+                        li.social-item-white.social-goog
+                            a.social-goog-link(href="#")
+                .subscribe
+                    h3.subscribe-title Subscribe to Our Newsletter
+                    form.subscribe-form(method="post" action="#")
+                        input.subscribe-form-input(name="subscribe-email" placeholder="Email Address")
+                        button.btn.btn-subscribe(type="submit") Subscribe
+            .footer-row
+                .copyright
+                    p.copyright-text Real estate web application<br>© 2014
 
     //build:js js/jquery.min.js
     +vendor('script', 'jquery/dist/jquery.min.js')
