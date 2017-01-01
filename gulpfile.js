@@ -95,7 +95,7 @@ gulp.task('sass', function () {
             replace: ['../../', '../']
         }))
         .pipe(sourcemaps.write())
-        .pipe(cssnano())
+        // .pipe(cssnano())
         .pipe(rename('styles.min.css'))
         .pipe(gulp.dest(paths.scss.dist))
         .pipe(reload({stream: true}));
@@ -108,6 +108,15 @@ gulp.task('sync', function () {
             baseDir: paths.browserSync.baseDir
         }
     });
+});
+
+gulp.task('copy-file', function () {
+    gulp.src(SRC_PATH + '/bower/jquery/dist/jquery.min.js')
+        .pipe(gulp.dest(DIST_PATH + '/js'));
+    gulp.src(SRC_PATH + '/bower/bxslider/images/*.*')
+        .pipe(gulp.dest(DIST_PATH + '/img'));
+    return gulp.src(SRC_PATH + '/bower/bxslider/jquery.bxslider.js')
+        .pipe(gulp.dest(DIST_PATH + '/js'));
 });
 
 // scripts
@@ -165,5 +174,5 @@ gulp.task('watch-no-image', function () {
 
 
 /* --------- default --------- */
-gulp.task('default', ['jade', 'sass', 'images', 'sync', 'fonts', 'watch']);
-gulp.task('default-no-image', ['jade', 'sass', 'sync', 'fonts', 'watch-no-image']);
+gulp.task('default', ['jade', 'sass', 'images', 'sync', 'fonts', 'copy-file', 'watch']);
+gulp.task('default-no-image', ['jade', 'sass', 'sync', 'fonts', 'copy-file', 'watch-no-image']);

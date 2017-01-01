@@ -1,0 +1,60 @@
+.menu {
+  @include clearfix();
+  padding-top: 24px;
+  padding-bottom: 28px;
+  padding-left: 21px;
+}
+
+.logo-link {
+  text-decoration: none;
+  float: left;
+  color: white;
+  font-size: 0;
+}
+
+.menu-logo {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  color: white;
+  @include inline-block-top;
+  margin-top: 3px;
+}
+
+.logo-img {
+  @include inline-block-top;
+  padding-right: 5px;
+}
+
+.menu-item {
+  @include inline-block-top;
+  line-height: 36px;
+  box-sizing: border-box;
+}
+
+.menu-list {
+  float: right;
+  font-size: 0;
+  margin-right: 3px;
+  margin-top: -4px;
+}
+
+.menu-link {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+  margin-left: 19px;
+}
+.menu-link-active{
+  border-radius: 2px;
+  background-color: #0eaaa6;
+  width: 117px;
+  padding: 9px 15px 10px;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+}

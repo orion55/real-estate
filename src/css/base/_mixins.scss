@@ -10,15 +10,13 @@
   -moz-border-radius: $params;
 }
 
-@mixin color($bg, $color: red ) {
-  color: $color;
-  background-color: $bg;
-}
-
-%clearfix {
+@mixin clearfix() {
+  &:before,
   &:after {
     content: "";
-    display: block;
+    display: table;
+  }
+  &:after {
     clear: both;
   }
 }
@@ -26,4 +24,9 @@
 @mixin inline-block($value) {
   display: inline-block;
   vertical-align: $value;
+}
+
+@mixin inline-block-top {
+  display: inline-block;
+  vertical-align: top;
 }

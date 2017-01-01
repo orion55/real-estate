@@ -17,7 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "normalize-css": "normalize.css#^4.2.0",
-    "jquery": "^3.0.0"
+    "jquery": "^1.0.0",
+    "bxslider": "*"
   }
 }
