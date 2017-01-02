@@ -1,0 +1,80 @@
+.form-search {
+  font-size: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  //padding-left: 9px;
+}
+
+.form-search-input, .form-search-select, .input-group, .form-search-label {
+  @include inline-block-top;
+  margin: 0 13px 0 0;
+  padding: 0;
+}
+
+.form-search-input {
+  padding: 8px 17px;
+  border: 1px solid #dfdfdf;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 178px;
+  height: 37px;
+}
+
+.input-group .form-search-input {
+  border-radius: 0 2px 2px 0;
+  border-top: 1px solid #dfdfdf;
+  border-right: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  border-left: none;
+  margin: 0;
+}
+
+.input-group-dollar {
+  background-color: #f7f7f7;
+  width: 33px;
+  height: 37px;
+  display: inline-block;
+  font-size: 13px;
+  vertical-align: top;
+  border-radius: 2px 0 0 2px;
+  font-weight: 400;
+  line-height: 37px;
+}
+
+.form-search-label {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  padding-top: 9px;
+}
+
+.form-search-select {
+  border: 1px solid #dfdfdf;
+  background-color: #ffffff;
+  height: 37px;
+  color: #999999;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  border-radius: 2px;
+  padding-left: 9px;
+  width: 102px;
+}
+
+.form-search-check {
+  border-radius: 2px;
+  border: 1px solid #dfdfdf;
+  background-color: #ffffff;
+  width: 20px;
+  height: 20px;
+}
+
+.form-search-label-text{
+  @include inline-block-top;
+  //padding-left: 3px;
+  //margin-top: -1px;
+}
