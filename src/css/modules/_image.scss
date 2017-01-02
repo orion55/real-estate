@@ -1,0 +1,38 @@
+.service-image {
+  position: absolute;
+  display: block;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../img/spritesheet.png") no-repeat;
+}
+
+.service-image-pin {
+  top: 57px;
+  width: 42px;
+  height: 60px;
+  background-position: -151px -5px;
+}
+
+.service-image-user {
+  top: 57px;
+  width: 75px;
+  height: 65px;
+  background-position: -393px -5px;
+}
+
+.service-image-house {
+  top: 58px;
+  width: 63px;
+  height: 60px;
+  background-position: -5px -5px;
+}
+
+.service-image-cloud {
+  top: 61px;
+  width: 59px;
+  height: 54px;
+  background-position: -255px -5px;
+}

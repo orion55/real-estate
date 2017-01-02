@@ -20,3 +20,47 @@
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
   padding-bottom: 21px;
 }
+
+.promo-title {
+  font-family: 'OpenSansLight', 'Arial', sans-serif;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 7px;
+}
+
+.promo-desc {
+  font-family: 'OpenSansLight', 'Arial', sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 18px;
+  text-align: center;
+}
+
+.services-title {
+  text-align: center;
+  color: #333333;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 18px;
+  padding-bottom: 20px;
+}
+
+.service-title {
+  font-family: 'OpenSansLight', 'Arial', sans-serif;
+  color: $green;
+  font-size: 22px;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 15px;
+  line-height: 28px;
+}
+.service-desc{
+  font-family: 'OpenSansLight', 'Arial', sans-serif;
+  color: #999999;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: center;
+}

@@ -35,5 +35,61 @@
 }
 
 .promo {
+  width: 100%;
+  background-color: $green;
+  padding-top: 26px;
+  padding-bottom: 31px;
+}
 
+.container {
+  margin: 0 auto;
+  width: 1366px;
+}
+
+.services {
+  padding-top: 41px;
+}
+
+.service {
+  box-sizing: border-box;
+  width: 25%;
+  float: left;
+  position: relative;
+  padding-top: 139px;
+  padding-bottom: 30px;
+  text-decoration: none;
+  &:nth-last-child(1) {
+    float: right;
+  }
+  transition: all 1s ease;
+  &:hover {
+    background-color: $green;
+    border-radius: 3px;
+    & .service-title {
+      color: white;
+      font-size: 24px;
+    }
+    & .service-desc {
+      color: #ffffff;
+      font-size: 14px;
+    }
+    & .service-image-house {
+      background-position: -78px -5px;
+    }
+    & .service-image-pin {
+      background-position: -203px -5px;
+    }
+    & .service-image-user {
+      background-position: -478px -5px;
+    }
+    & .service-image-cloud {
+      background-position: -324px -5px;
+    }
+  }
+}
+
+.service-row {
+  @include clearfix();
+  padding-left: 142px;
+  padding-right: 142px;
 }
