@@ -2,7 +2,7 @@
   @include clearfix();
   padding-top: 24px;
   padding-bottom: 28px;
-  padding-left: 21px;
+  padding-left: 5px;
 }
 
 .logo-link {
@@ -10,6 +10,9 @@
   float: left;
   color: white;
   font-size: 0;
+  &:hover {
+    border-bottom: 2px solid white;
+  }
 }
 
 .menu-logo {
@@ -46,8 +49,12 @@
   text-align: left;
   text-decoration: none;
   margin-left: 19px;
+  &:hover {
+    border-bottom: 1px solid white;
+  }
 }
-.menu-link-active{
+
+.menu-link-active {
   border-radius: 2px;
   background-color: #0eaaa6;
   width: 117px;
@@ -57,4 +64,9 @@
   text-align: center;
   cursor: pointer;
   box-sizing: border-box;
+  &:hover {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+    border: none;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, .05) 40%, rgba(0, 0, 0, .1));
+  }
 }

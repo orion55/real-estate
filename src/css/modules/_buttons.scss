@@ -1,0 +1,23 @@
+.btn {
+  padding: 12px 20px;
+  border: none rgba(0, 0, 0, 0);
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: white;
+  border-radius: 2px;
+}
+
+.btn-black {
+  background-color: #333333;
+  width: 115px;
+  height: 41px;
+  transition: background-color 0.7s ease;
+  &:hover {
+    background-color: black;
+  }
+}
