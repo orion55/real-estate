@@ -4,7 +4,7 @@
 }
 
 .star-list {
-  display: inline-block;
+  @include inline-block-top;
   font-size: 0;
 }
 
@@ -12,7 +12,7 @@
   background: url("../img/star.png") no-repeat;
   width: 13px;
   height: 12px;
-  display: inline-block;
+  @include inline-block-top;
   padding-right: 3px;
 }
 
@@ -20,13 +20,32 @@
   background: url("../img/star-notactive.png") no-repeat;
   width: 13px;
   height: 12px;
-  display: inline-block;
+  @include inline-block-top;
 }
 
-.property-popup-line{
+.property-popup-line {
   background-color: rgba(255, 255, 255, 0.5);
   width: 212px;
   height: 1px;
   border: none;
   margin: 0 auto;
+}
+
+.social-list {
+  display: inline-block;
+  list-style: none;
+  width: 100%;
+}
+
+.social-item {
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px black solid;
+  background-color: #ffffff;
+  width: 29px;
+  height: 29px;
+}
+
+.agent-social{
+  padding-top: 7px;
 }

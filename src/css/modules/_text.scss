@@ -39,7 +39,8 @@
   text-align: center;
 }
 
-.services-title, .properties-title {
+.services-title, .properties-title, .agents-title {
+  font-family: 'OpenSansLight', 'Arial', sans-serif;
   text-align: center;
   color: #333333;
   font-size: 22px;
@@ -75,7 +76,7 @@
   font-weight: 400;
   text-transform: uppercase;
   background-color: #eab134;
-  display: inline-block;
+  @include inline-block-top;
 }
 
 .property-popup-price {
@@ -96,4 +97,13 @@
   font-size: 11px;
   font-style: italic;
   padding-top: 4px;
+}
+
+.agents-title {
+  padding-bottom: 34px;
+}
+
+.agent-name {
+  padding-top: 8px;
+  padding-bottom: 12px;
 }

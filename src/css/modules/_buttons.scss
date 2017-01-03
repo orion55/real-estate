@@ -1,7 +1,7 @@
 .btn {
   border: none rgba(0, 0, 0, 0);
   text-decoration: none;
-  display: inline-block;
+  @include inline-block-top;
   white-space: nowrap;
   vertical-align: middle;
   text-align: center;

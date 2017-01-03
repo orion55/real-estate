@@ -116,7 +116,7 @@
 }
 
 .property {
-  display: inline-block;
+  @include inline-block-top;
   margin-right: 20px;
   margin-bottom: 20px;
   font-size: 0;
@@ -124,7 +124,7 @@
     .property-popup {
       visibility: visible;
     }
-    .property-image{
+    .property-image {
       filter: grayscale(100%) blur(1px);
     }
   }
@@ -144,4 +144,26 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.agents {
+  padding-top: 40px;
+}
+
+.agents-row {
+  @include clearfix();
+  text-align: center;
+  width: 1120px;
+  margin: 0 auto;
+}
+
+.agent {
+  width: 25%;
+  box-sizing: border-box;
+  float: left;
+  font-size: 13px;
+  text-align: center;
+  &:nth-last-child(1) {
+    float: right;
+  }
 }

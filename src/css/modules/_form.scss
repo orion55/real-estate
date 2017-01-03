@@ -36,7 +36,7 @@
   background-color: #f7f7f7;
   width: 33px;
   height: 37px;
-  display: inline-block;
+  @include inline-block-top;
   font-size: 13px;
   vertical-align: top;
   border-radius: 2px 0 0 2px;

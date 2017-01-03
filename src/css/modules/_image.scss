@@ -43,3 +43,10 @@
   transition: .3s ease-in-out;
   filter: grayscale(0) blur(0);
 }
+
+.agent-photo{
+  border-radius: 50%;
+  background-color: #cccccc;
+  width: 150px;
+  height: 150px;
+}
