@@ -39,7 +39,7 @@
   text-align: center;
 }
 
-.services-title {
+.services-title, .properties-title {
   text-align: center;
   color: #333333;
   font-size: 22px;
@@ -57,10 +57,43 @@
   padding-bottom: 15px;
   line-height: 28px;
 }
-.service-desc{
+
+.service-desc {
   font-family: 'OpenSansLight', 'Arial', sans-serif;
   color: #999999;
   font-weight: 300;
   line-height: 18px;
   text-align: center;
+}
+
+.properties-title {
+  padding-bottom: 34px;
+}
+
+.property-popup-schild {
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: #eab134;
+  display: inline-block;
+}
+
+.property-popup-price {
+  font-family: 'OpenSansLight', 'Arial', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 17px;
+}
+
+.property-popup-title {
+  font-family: 'OpenSansLight', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 4px;
+}
+
+.property-popup-address {
+  font-size: 11px;
+  font-style: italic;
+  padding-top: 4px;
 }

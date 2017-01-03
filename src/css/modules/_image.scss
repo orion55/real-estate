@@ -36,3 +36,10 @@
   height: 54px;
   background-position: -255px -5px;
 }
+
+.property-image {
+  border-radius: 4px;
+  display: block;
+  transition: .3s ease-in-out;
+  filter: grayscale(0) blur(0);
+}

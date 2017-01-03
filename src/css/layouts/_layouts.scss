@@ -56,7 +56,7 @@
   float: left;
   position: relative;
   padding-top: 139px;
-  padding-bottom: 30px;
+  padding-bottom: 41px;
   text-decoration: none;
   &:nth-last-child(1) {
     float: right;
@@ -92,4 +92,56 @@
   @include clearfix();
   padding-left: 142px;
   padding-right: 142px;
+}
+
+.properties {
+  padding-top: 28px;
+}
+
+.properties-row {
+  text-align: center;
+}
+
+.property-popup {
+  visibility: hidden;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 12px;
+  font-size: 13px;
+  color: white;
+  width: 353px;
+  height: 212px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+}
+
+.property {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-size: 0;
+  &:hover {
+    .property-popup {
+      visibility: visible;
+    }
+    .property-image{
+      filter: grayscale(100%) blur(1px);
+    }
+  }
+}
+
+.property-link {
+  text-decoration: none;
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.property-popup-list {
+  position: absolute;
+  left: 0;
+  bottom: 33px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
