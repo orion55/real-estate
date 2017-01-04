@@ -13,7 +13,6 @@ $(document).ready(function () {
     $('#slider2').bxSlider(
         {
             preloadImages: true,
-            // mode: 'fade',
             controls: false,
             auto: true,
             autoStart: true,

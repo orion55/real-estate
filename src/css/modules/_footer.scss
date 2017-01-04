@@ -1,0 +1,115 @@
+.footer {
+  width: 100%;
+  background-color: #333333;
+}
+
+.footer-row {
+  @include clearfix();
+  margin: 0 auto;
+  width: 1110px;
+  padding-top: 36px;
+  padding-bottom: 52px;
+  color: white;
+  padding-left: 19px;
+}
+
+.footer-row-copyright {
+  text-align: center;
+  padding-bottom: 44px;
+}
+
+.company, .disover, .contact {
+  width: 25%;
+  float: left;
+}
+
+.subscribe {
+  width: 25%;
+  float: right;
+}
+
+.company-title, .disover-title, .contact-title, .subscribe-title {
+  font-family: 'OpenSansLight', 'Arial', sans-serif;
+  color: #c6e4e3;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: left;
+  padding-bottom: 12px;
+  margin-left: 2px;
+}
+
+.company-title {
+  margin-left: -4px;
+}
+
+.subscribe-title {
+  margin-left: 6px;
+}
+
+.copyright-text {
+  color: #999999;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: center;
+}
+
+.company-list, .disover-list {
+  list-style: none;
+}
+
+.company-link, .disover-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.7s ease;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  &:hover {
+    color: $green;
+  }
+  &:active {
+    position: relative;
+    left: 5px;
+  }
+}
+
+.contact-phone {
+  padding-left: 3px;
+  padding-top: 3px;
+}
+
+.phone-number {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  padding-left: 4px;
+}
+
+.contact-address {
+  font-family: 'OpenSansLight', 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: left;
+  padding-top: 12px;
+  padding-left: 2px;
+  padding-bottom: 18px;
+}
+
+.contact-social {
+  padding-left: 3px;
+}
+
+.social-item-white {
+  border-radius: 50%;
+  border: 1px #ffffff solid;
+  width: 29px;
+  height: 29px;
+  display: inline-block;
+}
+
