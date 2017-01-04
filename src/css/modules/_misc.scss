@@ -1,4 +1,4 @@
-.slider .bx-wrapper {
+.slider .bx-wrapper, .testimonials .bx-wrapper {
   box-shadow: none;
   border: none;
 }
@@ -32,7 +32,6 @@
 }
 
 .social-list {
-  display: inline-block;
   list-style: none;
   width: 100%;
 }
@@ -46,6 +45,85 @@
   height: 29px;
 }
 
-.agent-social{
+.agent-social {
   padding-top: 7px;
+}
+
+.social-link {
+  background: url("../img/spritesheet-soc.png") no-repeat;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-mail {
+  border: 1px $green solid;
+  transition: background-color 0.7s ease;
+  &:hover {
+    background-color: $green;
+    & .social-mail-link {
+      background-position: -79px -3px;
+    }
+  }
+}
+
+.social-mail-link {
+  width: 12px;
+  height: 10px;
+  background-position: -61px -3px;
+  margin-top: 10px;
+}
+
+.social-face {
+  border: 1px #4d68a1 solid;
+  transition: background-color 0.7s ease;
+  &:hover {
+    background-color: #4d68a1;
+    & .social-face-link {
+      background-position: -14px -3px;
+    }
+  }
+}
+
+.social-face-link {
+  width: 5px;
+  height: 11px;
+  background-position: -3px -3px;
+  margin-top: 9px;
+}
+
+.social-twi {
+  border: 1px #5eb0ef solid;
+  transition: background-color 0.7s ease;
+  &:hover {
+    background-color: #5eb0ef;
+    & .social-twi-link {
+      background-position: -114px -3px;
+    }
+  }
+}
+
+.social-twi-link {
+  width: 11px;
+  height: 9px;
+  background-position: -97px -3px;
+  margin-top: 10px;
+}
+
+.social-goog {
+  border: 1px #dd4b39 solid;
+  transition: background-color 0.7s ease;
+  &:hover {
+    background-color: #dd4b39;
+    & .social-goog-link {
+      background-position: -43px -3px;
+    }
+  }
+}
+
+.social-goog-link {
+  width: 12px;
+  height: 11px;
+  background-position: -25px -3px;
+  margin-top: 10px;
 }

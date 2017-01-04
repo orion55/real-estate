@@ -1,3 +1,7 @@
+.slider-item-image {
+  margin: 0 auto;
+}
+
 .service-image {
   position: absolute;
   display: block;
@@ -6,7 +10,7 @@
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  background: url("../img/spritesheet.png") no-repeat;
+  background: url("../img/spritesheet.png") no-repeat center;
 }
 
 .service-image-pin {
@@ -44,9 +48,18 @@
   filter: grayscale(0) blur(0);
 }
 
-.agent-photo{
+.agent-photo {
   border-radius: 50%;
   background-color: #cccccc;
   width: 150px;
   height: 150px;
+}
+
+.testimonial-image {
+  border-radius: 50%;
+  background-color: #cccccc;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 22px;
 }

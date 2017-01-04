@@ -163,7 +163,7 @@ block content
             h2.agents-title Our Agents
             .agents-row
                 .agent
-                    a.property-link(href="#")
+                    a.agent-link(href="#")
                         img.agent-photo(src="img/photo01.jpg" alt="photo01" width="150" height="150")
                     .agent-name John Smith
                     ul.agent-list.star-list
@@ -174,15 +174,15 @@ block content
                         li.star-item.star-item-active
                     ul.agent-social.social-list
                         li.social-item.social-mail
-                            a.social-mail-link(href="#")
+                            a.social-link.social-mail-link(href="#")
                         li.social-item.social-face
-                            a.social-face-link(href="#")
+                            a.social-link.social-face-link(href="#")
                         li.social-item.social-twi
-                            a.social-twi-link(href="#")
+                            a.social-link.social-twi-link(href="#")
                         li.social-item.social-goog
-                            a.social-goog-link(href="#")
+                            a.social-link.social-goog-link(href="#")
                 .agent
-                    a.property-link(href="#")
+                    a.agent-link(href="#")
                         img.agent-photo(src="img/photo02.jpg" alt="photo02" width="150" height="150")
                     .agent-name Antony Iglesias
                     ul.agent-list.star-list
@@ -193,15 +193,15 @@ block content
                         li.star-item.star-item-active
                     ul.agent-social.social-list
                         li.social-item.social-mail
-                            a.social-mail-link(href="#")
+                            a.social-link.social-mail-link(href="#")
                         li.social-item.social-face
-                            a.social-face-link(href="#")
+                            a.social-link.social-face-link(href="#")
                         li.social-item.social-twi
-                            a.social-twi-link(href="#")
+                            a.social-link.social-twi-link(href="#")
                         li.social-item.social-goog
-                            a.social-goog-link(href="#")
+                            a.social-link.social-goog-link(href="#")
                 .agent
-                    a.property-link(href="#")
+                    a.agent-link(href="#")
                         img.agent-photo(src="img/photo03.jpg" alt="photo03" width="150" height="150")
                     .agent-name Rust Cohle
                     ul.agent-list.star-list
@@ -212,15 +212,15 @@ block content
                         li.star-item.star-item-active
                     ul.agent-social.social-list
                         li.social-item.social-mail
-                            a.social-mail-link(href="#")
+                            a.social-link.social-mail-link(href="#")
                         li.social-item.social-face
-                            a.social-face-link(href="#")
+                            a.social-link.social-face-link(href="#")
                         li.social-item.social-twi
-                            a.social-twi-link(href="#")
+                            a.social-link.social-twi-link(href="#")
                         li.social-item.social-goog
-                            a.social-goog-link(href="#")
+                            a.social-link.social-goog-link(href="#")
                 .agent
-                    a.property-link(href="#")
+                    a.agent-link(href="#")
                         img.agent-photo(src="img/photo04.jpg" alt="photo04" width="150" height="150")
                     .agent-name Jane Smith
                     ul.agent-list.star-list
@@ -231,21 +231,22 @@ block content
                         li.star-item.star-item-active
                     ul.agent-social.social-list
                         li.social-item.social-mail
-                            a.social-mail-link(href="#")
+                            a.social-link.social-mail-link(href="#")
                         li.social-item.social-face
-                            a.social-face-link(href="#")
+                            a.social-link.social-face-link(href="#")
                         li.social-item.social-twi
-                            a.social-twi-link(href="#")
+                            a.social-link.social-twi-link(href="#")
                         li.social-item.social-goog
-                            a.social-goog-link(href="#")
+                            a.social-link.social-goog-link(href="#")
         section.testimonials
             h2.testimonials-title Testimonials
-            ul.testimonials-slider
-                li.testimonials-slider-item
-                    img.testimonial-image(src="#" alt="pic01")
-                    p.testimonial-text There are many variations of passages of Lorem Ipsum available, but the majorityhave suffered alteration in some form, by injected humour, or randomised words
-                    .testimonial-autor Rust Cohle
-                li.testimonials-slider-item
-                    img.testimonial-image(src="#" alt="pic02")
-                    p.testimonial-text There are many variations of passages of Lorem Ipsum available, but the majorityhave suffered alteration in some form, by injected humour, or randomised words
-                    .testimonial-autor Jane Smith
+            .testimonials-wrap
+                ul#slider2.testimonials-slider
+                    li.testimonials-slider-item
+                        img.testimonial-image(src="img/photo03.jpg" alt="photo03" width="150" height="150")
+                        p.testimonial-text There are many variations of passages of Lorem Ipsum available, but the majority<br>have suffered alteration in some form, by injected humour, or randomised words
+                        .testimonial-autor Rust Cohle
+                    li.testimonials-slider-item
+                        img.testimonial-image(src="img/photo04.jpg" alt="photo04" width="150" height="150")
+                        p.testimonial-text There are many variations of passages of Lorem Ipsum available, but the majority<br>have suffered alteration in some form, by injected humour, or randomised words
+                        .testimonial-autor Jane Smith

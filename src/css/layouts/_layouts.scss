@@ -16,6 +16,10 @@
   background-color: #cccccc;
 }
 
+.slider-item {
+  background-color: #cccccc;
+}
+
 .home {
   position: absolute;
   left: 0;
@@ -163,7 +167,28 @@
   float: left;
   font-size: 13px;
   text-align: center;
+
   &:nth-last-child(1) {
     float: right;
   }
+  &:hover .agent-name {
+    color: $green;
+    font-weight: bold;
+  }
+}
+
+.testimonials {
+  padding-top: 57px;
+}
+
+.testimonials-slider {
+  list-style: none;
+  @include clearfix();
+}
+
+.testimonials-wrap {
+  box-sizing: border-box;
+  width: 804px;
+  display: block;
+  margin: 0 auto;
 }
