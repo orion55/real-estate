@@ -95,7 +95,7 @@ gulp.task('sass', function () {
             replace: ['../../', '../']
         }))
         .pipe(sourcemaps.write())
-        // .pipe(cssnano())
+        .pipe(cssnano())
         .pipe(rename('styles.min.css'))
         .pipe(gulp.dest(paths.scss.dist))
         .pipe(reload({stream: true}));
