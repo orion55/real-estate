@@ -8,7 +8,7 @@
   margin: 0 auto;
   width: 1110px;
   padding-top: 36px;
-  padding-bottom: 52px;
+  padding-bottom: 58px;
   color: white;
   padding-left: 19px;
 }
@@ -45,6 +45,7 @@
 
 .subscribe-title {
   margin-left: 6px;
+  margin-bottom: 4px;
 }
 
 .copyright-text {
@@ -110,6 +111,80 @@
   border: 1px #ffffff solid;
   width: 29px;
   height: 29px;
-  display: inline-block;
+  @include inline-block-top;
+  transition: background-color 0.7s ease;
+  &:hover {
+    background-color: white;
+    & .social-face-link-white {
+      background-position: -11px -2px;
+    }
+    & .social-twi-link-white {
+      background-position: -93px -2px;
+    }
+    & .social-goog-link-white {
+      background-position: -36px -2px;
+    }
+    & .social-in-link-white {
+      background-position: -65px -2px;
+    }
+  }
 }
 
+.contact-link {
+  background: url("../img/spritesheet-soc-white.png") no-repeat;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-face-link-white {
+  width: 5px;
+  height: 11px;
+  margin-top: 9px;
+  background-position: -2px -2px;
+}
+
+.social-twi-link-white {
+  margin-top: 10px;
+  width: 11px;
+  height: 9px;
+  background-position: -78px -2px;
+}
+
+.social-goog-link-white {
+  margin-top: 10px;
+  width: 12px;
+  height: 11px;
+  background-position: -20px -2px;
+}
+
+.social-in-link-white {
+  margin-top: 10px;
+  width: 9px;
+  height: 9px;
+  background-position: -52px -2px;
+}
+
+.subscribe-form-input {
+  @include inline-block-top;
+  width: 260px;
+  height: 37px;
+  margin-bottom: 15px;
+  padding: 2px 0 0 13px;
+  margin-left: 6px;
+}
+
+.btn-subscribe {
+  width: 260px;
+  height: 36px;
+  background-color: $green;
+  margin-left: 5px;
+  &:hover {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, .05) 40%, rgba(0, 0, 0, .1));
+  }
+  &:active {
+    position: relative;
+    top: 3px;
+  }
+}
