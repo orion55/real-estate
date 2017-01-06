@@ -6,8 +6,11 @@
 }
 
 .logo-link {
+  position: absolute;
+  top: 23px;
+  left: 5px;
   text-decoration: none;
-  float: left;
+  //float: left;
   color: white;
   font-size: 0;
   &:hover {

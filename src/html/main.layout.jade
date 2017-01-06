@@ -15,10 +15,10 @@ html(lang='ru')
         link(rel="stylesheet" href="css/styles.min.css")
     body
         header.header
+            a.logo-link(href="#")
+                img.logo-img(src="img/logo.png" alt="Logo" width="30px" height="24px")
+                .menu-logo Reales
             nav.menu
-                a.logo-link(href="#")
-                    img.logo-img(src="img/logo.png" alt="Logo" width="30px" height="24px")
-                    .menu-logo Reales
                 ul.menu-list
                     li.menu-item
                         a.menu-link(href="#") Sign Up
@@ -83,7 +83,7 @@ html(lang='ru')
                 .subscribe
                     h3.subscribe-title Subscribe to Our Newsletter
                     form.subscribe-form(method="post" action="#")
-                        input.form-search-input.subscribe-form-input(name="subscribe-email" placeholder="Email Address")
+                        input.form-search-input.subscribe-form-input(name="subscribe-email" placeholder="Email Address" type="email")
                         button.btn.btn-subscribe(type="submit") Subscribe
             .footer-row-copyright
                 .copyright
