@@ -25,6 +25,7 @@ $(document).ready(function () {
             preloadImages: true,
             controls: true,
             auto: true,
+            mode: 'fade',
             autoStart: true,
             pause: 5000,
             pager: true

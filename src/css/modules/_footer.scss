@@ -63,11 +63,11 @@
 .company-link, .disover-link {
   text-decoration: none;
   color: white;
-  transition: color 0.7s ease;
   font-size: 13px;
   font-weight: 400;
   line-height: 20px;
   text-align: left;
+  transition: color 0.7s ease;
   &:hover {
     color: $green;
   }
