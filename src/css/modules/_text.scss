@@ -136,3 +136,44 @@
 .testimonials-title {
   padding-bottom: 33px;
 }
+
+.post-category {
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 14px;
+}
+
+.post-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 16px;
+  letter-spacing: 1.2px;
+}
+
+.post-subtitle {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.author-name, .author-text, .post-time {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 23px;
+}
+
+.author-position {
+  font-size: 9px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.author-text{
+  margin-left: 5px;
+}

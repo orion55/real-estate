@@ -20,4 +20,14 @@ $(document).ready(function () {
             pager: true
         }
     );
+    $('#slider-post').bxSlider(
+        {
+            preloadImages: true,
+            controls: true,
+            auto: true,
+            autoStart: true,
+            pause: 5000,
+            pager: true
+        }
+    );
 });

@@ -27,6 +27,14 @@
   margin-top: 3px;
 }
 
+.menu-logo-text {
+  font-family: 'OpenSansBold', 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 5px;
+}
+
 .logo-img {
   @include inline-block-top;
   padding-right: 5px;
@@ -41,8 +49,8 @@
 .menu-list {
   float: right;
   font-size: 0;
-  margin-right: 3px;
   margin-top: -4px;
+  margin-right: 52px;
 }
 
 .menu-link {
@@ -71,5 +79,14 @@
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
     border: none;
     background-image: linear-gradient(transparent, rgba(0, 0, 0, .05) 40%, rgba(0, 0, 0, .1));
+  }
+}
+
+.search-link {
+  position: absolute;
+  right: 15px;
+  top: 28px;
+  &:hover {
+    border-bottom: 1px solid white;
   }
 }
