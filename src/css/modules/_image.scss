@@ -63,11 +63,21 @@
   float: left;
   margin-right: 22px;
 }
-.author-image{
+
+.author-image {
   border-radius: 50%;
   background-color: #cccccc;
   width: 40px;
   height: 40px;
   float: left;
   margin-right: 6px;
+}
+
+.article-image {
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  transition: all .2s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
 }
