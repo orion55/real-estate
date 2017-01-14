@@ -44,6 +44,10 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 .promo {
@@ -51,6 +55,16 @@
   background-color: $green;
   padding-top: 26px;
   padding-bottom: 31px;
+}
+
+.promo-wrap {
+  @include width1100();
+}
+
+.services {
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 41px;
 }
 
 .container {
@@ -69,32 +83,28 @@
   background-color: #f3f3f3;
 }
 
-.services {
-  padding-top: 41px;
-}
-
 .service {
   box-sizing: border-box;
-  width: 25%;
+  width: 22%;
   float: left;
   position: relative;
   padding-top: 139px;
   padding-bottom: 41px;
   text-decoration: none;
+  margin-right: 30px;
   &:nth-last-child(1) {
     float: right;
   }
-  transition: all 1s ease;
+  transition: 0.4s ease-in-out;
   &:hover {
     background-color: $green;
     border-radius: 3px;
+    transform: scale(1.1);
     & .service-title {
       color: white;
-      font-size: 24px;
     }
     & .service-desc {
       color: #ffffff;
-      font-size: 14px;
     }
     & .service-image-house {
       background-position: -78px -5px;
@@ -113,8 +123,6 @@
 
 .service-row {
   @include clearfix();
-  padding-left: 142px;
-  padding-right: 142px;
 }
 
 .properties {

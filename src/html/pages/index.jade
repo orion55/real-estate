@@ -19,7 +19,7 @@ block content
             a.btn.btn-home(href="#") Learn More
         .group-search
             form.form-search#form-search(method="post" action="#")
-                input.form-search-input(name="search-city" placeholder="City")
+                input.form-input(name="search-city" placeholder="City")
                 select.form-search-select(name="select-bedrooms")
                     option(selected="selected") Bedrooms
                     option 1
@@ -30,10 +30,10 @@ block content
                     option 2
                 .input-group
                     .input-group-dollar $
-                    input.form-search-input(type="text" placeholder="From" name="search-min-price")
+                    input.form-input(type="text" placeholder="From" name="search-min-price")
                 .input-group
                     .input-group-dollar $
-                    input.form-search-input(type="text" placeholder="To" name="search-max-price")
+                    input.form-input(type="text" placeholder="To" name="search-max-price")
                 label.form-search-label
                     input.form-search-check(type="checkbox" name="for-rent")
                     span.form-search-label-text For Rent
@@ -43,29 +43,31 @@ block content
                 button.btn.btn-green.btn-search(type="submit") Search
 
     .promo
-        h2.promo-title Find your new place with Reales
-        p.promo-desc Fusce risus metus, placerat in consectetur eu, porttitor a est sed sed dolor lorem<br>cras adipiscing
+        .promo-wrap
+            h2.promo-title Find your new place with Reales
+            .promo-desc Fusce risus metus, placerat in consectetur eu, porttitor a est sed sed dolor lorem<br>cras adipiscing
 
+
+    section.services
+        h2.services-title Our Services
+        .service-row
+            a.service(href="#")
+                .service-image.service-image-pin
+                h3.service-title Find places anywhere in the world
+                .service-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            a.service(href="#")
+                .service-image.service-image-user
+                h3.service-title We have agents with experience
+                .service-desc Nulla convallis egestas rhoncus consectetur adipiscing elit
+            a.service(href="#")
+                .service-image.service-image-house
+                h3.service-title Buy or rent beautiful properties
+                .service-desc Donec facilisis fermentum sem, ac viverra ante luctus vel
+            a.service(href="#")
+                .service-image.service-image-cloud
+                h3.service-title With agent account you can list properties
+                .service-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit
     .container
-        section.services
-            h2.services-title Our Services
-            .service-row
-                a.service(href="#")
-                    .service-image.service-image-pin
-                    h3.service-title Find places anywhere in the world
-                    .service-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                a.service(href="#")
-                    .service-image.service-image-user
-                    h3.service-title We have agents with experience
-                    .service-desc Nulla convallis egestas rhoncus consectetur adipiscing elit
-                a.service(href="#")
-                    .service-image.service-image-house
-                    h3.service-title Buy or rent beautiful properties
-                    .service-desc Donec facilisis fermentum sem, ac viverra ante luctus vel
-                a.service(href="#")
-                    .service-image.service-image-cloud
-                    h3.service-title With agent account you can list properties
-                    .service-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit
         .properties
             h2.properties-title Recently Listed Properties
             .properties-row
