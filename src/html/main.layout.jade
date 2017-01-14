@@ -15,17 +15,17 @@ html(lang='ru')
         link(rel="stylesheet" href="css/styles.min.css")
     body
         header.header
-            a.logo-link(href="index.html")
-                img.logo-img(src="img/logo.png" alt="Logo" width="30" height="24")
-                .menu-logo Reales
-            nav.menu
-                ul.menu-list
-                    li.menu-item
-                        a.menu-link(href="#") Sign Up
-                    li.menu-item
-                        a.menu-link(href="#") Sign In
-                    li.menu-item
-                        a.menu-link.menu-link-active(href="#") List a Property
+            .header-wrap
+                a.logo-link(href="index.html")
+                    img.logo-img(src="img/logo.png" alt="Logo")
+                nav.menu
+                    ul.menu-list
+                        li.menu-item
+                            a.menu-link(href="#") Sign Up
+                        li.menu-item
+                            a.menu-link(href="#") Sign In
+                        li.menu-item
+                            a.menu-link.menu-link-active(href="#") List a Property
 
         block content
 

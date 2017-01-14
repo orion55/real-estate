@@ -94,9 +94,9 @@ gulp.task('sass', function () {
         .pipe(urlAdjuster({
             replace: ['../../', '../']
         }))
-        .pipe(sourcemaps.write())
         .pipe(cssnano())
         .pipe(rename('styles.min.css'))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest(paths.scss.dist))
         .pipe(reload({stream: true}));
 });

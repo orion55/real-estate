@@ -7,8 +7,14 @@
   z-index: 10;
 }
 
+.header-wrap {
+  @include width1100();
+  position: relative;
+}
+
 .box {
   position: relative;
+  //display: flex;
 }
 
 .slider {
@@ -23,11 +29,12 @@
 
 .home {
   position: absolute;
-  left: 0;
-  top: 201px;
-  width: 100%;
   z-index: 10;
   text-align: center;
+  width: 1100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .group-search {
