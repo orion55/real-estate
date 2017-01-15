@@ -216,7 +216,7 @@
   line-height: 18px;
   text-align: right;
   padding-bottom: 29px;
-  margin-right: -3px;
+  //margin-right: -3px;
 }
 
 .tag {
@@ -232,12 +232,11 @@
   padding: 1px 2px 1px 2px;
 }
 
-.categories-list, .archive-list {
+.categories-list {
   list-style: none;
-  //margin-right: -3px;
 }
 
-.categories-link, .archive-link {
+.categories-link {
   text-decoration: none;
   color: #999999;
   font-size: 14px;
@@ -265,8 +264,23 @@
   padding-bottom: 33px;
 }
 
-.article-category-link, .article-title-link {
+.article-image-link {
   text-decoration: none;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  width: 260px;
+  //height: 200px;
+  min-height: 200px;
+  overflow: hidden;
+}
+
+.article-image-link-2x {
+  display: block;
+  width: 540px;
+  min-height: 200px;
+  overflow: hidden;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
 }
 
 .article-category {
@@ -317,7 +331,7 @@
   color: #999999;
   font-size: 13px;
   font-weight: 400;
-  text-align: left;
+  //text-align: left;
   margin-left: 21px;
   margin-right: 18px;
   line-height: 19px;
@@ -342,5 +356,14 @@
 }
 
 .posts-arrow-right {
-  margin-right: 73px;
+  //margin-right: 73px;
+}
+
+.article-author-name:after {
+  content: ",";
+  display: inline-block;
+}
+
+.article-datetime {
+  margin-left: 5px;
 }

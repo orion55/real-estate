@@ -93,20 +93,26 @@
   height: auto;
 }
 
-.author-image {
+.author-picture {
   border-radius: 50%;
   background-color: #cccccc;
   width: 40px;
   height: 40px;
   float: left;
   margin-right: 6px;
+  overflow: hidden;
+}
+
+.author-image {
+  width: 100%;
+  height: auto;
 }
 
 .article-image {
-  border-top-right-radius: 2px;
-  border-top-left-radius: 2px;
   transition: all .2s ease-in-out;
+  width: 100%;
+  height: auto;
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 }
