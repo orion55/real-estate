@@ -192,6 +192,10 @@
   line-height: 23px;
 }
 
+.post-time {
+  margin-left: 5px;
+}
+
 .author-position {
   font-size: 9px;
   font-weight: 400;
@@ -230,7 +234,7 @@
 
 .categories-list, .archive-list {
   list-style: none;
-  margin-right: -3px;
+  //margin-right: -3px;
 }
 
 .categories-link, .archive-link {

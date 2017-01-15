@@ -15,22 +15,23 @@ html(lang='ru')
         link(rel="stylesheet" href="css/styles.min.css")
     body.body-gray
         header.header
-            a.logo-link(href="index.html")
-                img.logo-img(src="img/logo.png" alt="Logo" width="30" height="24")
-                .menu-logo Reales
-                    span.menu-logo-text blog
-            nav.menu
-                ul.menu-list
-                    li.menu-item
-                        a.menu-link(href="#") App Home
-                    li.menu-item
-                        a.menu-link(href="#") Featured
-                    li.menu-item
-                        a.menu-link(href="#") Latest
-                    li.menu-item
-                        a.menu-link(href="#") Single Post
-            a.search-link(href="#")
-                img.search-image(src="img/search.png" alt="search-image" width="18" height="18")
+            .header-wrap
+                a.logo-link(href="index.html")
+                    img.logo-img(src="img/logo.png")
+                    .menu-logo
+                        span.menu-logo-text blog
+                nav.menu.menu-blog
+                    ul.menu-list
+                        li.menu-item
+                            a.menu-link(href="#") App Home
+                        li.menu-item
+                            a.menu-link(href="#") Featured
+                        li.menu-item
+                            a.menu-link(href="#") Latest
+                        li.menu-item
+                            a.menu-link(href="#") Single Post
+                a.search-link(href="#")
+                    img.search-image(src="img/search.png" alt="search-image")
 
         block content
 
