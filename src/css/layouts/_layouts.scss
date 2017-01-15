@@ -55,6 +55,16 @@
   background-color: $green;
   padding-top: 26px;
   padding-bottom: 31px;
+  box-sizing: border-box;
+  &:after {
+    content: "";
+    position: relative;
+    top: 31px;
+    display: block;
+    height: 41px;
+    width: 100%;
+    background-color: white;
+  }
 }
 
 .promo-wrap {
@@ -64,7 +74,8 @@
 .services {
   width: 1100px;
   margin: 0 auto;
-  padding-top: 41px;
+  //padding-top: 41px;
+  padding-bottom: 28px;
 }
 
 .container {
@@ -126,7 +137,10 @@
 }
 
 .properties {
-  padding-top: 28px;
+  width: 1110px;
+  margin: 0 auto;
+  //padding-top: 28px;
+  padding-bottom: 40px;
 }
 
 .properties-row {
@@ -151,12 +165,16 @@
   margin-right: 20px;
   margin-bottom: 20px;
   font-size: 0;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
   &:hover {
     .property-popup {
       visibility: visible;
     }
     .property-image {
       filter: grayscale(100%) blur(1px);
+      transform: scale(1.05);
     }
   }
 }
@@ -166,6 +184,7 @@
   position: relative;
   display: block;
   text-align: center;
+  //text-indent: -9999px;
 }
 
 .property-popup-list {
@@ -178,7 +197,9 @@
 }
 
 .agents {
-  padding-top: 40px;
+  //padding-top: 40px;
+  padding-bottom: 57px;
+  @include width1100();
 }
 
 .agents-row {
@@ -198,14 +219,10 @@
   &:nth-last-child(1) {
     float: right;
   }
-  &:hover .agent-name {
-    color: $green;
-    font-weight: bold;
-  }
 }
 
 .testimonials {
-  padding-top: 57px;
+  //padding-top: 57px;
 }
 
 .testimonials-slider {

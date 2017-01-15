@@ -11,6 +11,7 @@
   margin-left: auto;
   margin-right: auto;
   background: url("../img/spritesheet.png") no-repeat center;
+  text-indent: -9999px;
 }
 
 .service-image-pin {
@@ -41,27 +42,55 @@
   background-position: -255px -5px;
 }
 
+.property-photo {
+  position: relative;
+  overflow: hidden;
+  width: 353px;
+  height: 212px;
+  border-radius: 4px;
+  display: block;
+}
+
 .property-image {
   border-radius: 4px;
   display: block;
   transition: .3s ease-in-out;
   filter: grayscale(0) blur(0);
+  width: 100%;
+  height: auto;
 }
 
-.agent-photo {
+.agent-image {
   border-radius: 50%;
   background-color: #cccccc;
   width: 150px;
   height: 150px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: none;
 }
 
-.testimonial-image {
+.agent-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  //transform: scale(1);
+}
+
+.testimonial-photo {
   border-radius: 50%;
   background-color: #cccccc;
   width: 100px;
   height: 100px;
   float: left;
   margin-right: 22px;
+  overflow: hidden;
+}
+
+.testimonial-image {
+  width: 100%;
+  height: auto;
 }
 
 .author-image {
